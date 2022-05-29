@@ -1,11 +1,12 @@
 {
   "name": "@arifszn/meme-js",
   "version": "1.0.0",
-  "description": "Get random memes on the browser/server",
+  "description": "Get memes on browser/server",
   "main": "./src/index.js",
   "typings": "./types/index.d.ts",
   "scripts": {
     "test": "jest --silent",
+    "test:coverage": "jest --silent --coverage",
     "lint": "eslint --ext .js,.jsx .",
     "lint:fix": "eslint --ext .js,.jsx --fix .",
     "prettier": "prettier --check './**/*.{js,jsx,ts,tsx,css,md,json}'",
@@ -25,6 +26,14 @@
     "memes",
     "reddit meme",
     "random memes",
+    "fetch memes",
+    "meme api",
+    "funny image",
+    "funny images",
+    "meme generate",
+    "meme generator",
+    "reddit funny",
+    "reddit client",
     "reddit",
     "reddit image",
     "reddit image api"
