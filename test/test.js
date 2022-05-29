@@ -70,4 +70,19 @@ describe('getMeme function', () => {
       });
     });
   });
+
+  it('should return empty array for invalid total', async () => {
+    const result = await getMeme({ total: 0 });
+
+    expect(Array.isArray(result)).toBe(true);
+    expect(result.length).toBe(0);
+  });
+
+  it('should return empty array for total more than max', async () => {
+    const totalMax = 20;
+    const result = await getMeme({ total: totalMax + 1 });
+
+    expect(Array.isArray(result)).toBe(true);
+    expect(result.length).toBe(0);
+  });
 });
