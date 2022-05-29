@@ -6,6 +6,7 @@
   "typings": "./types/index.d.ts",
   "scripts": {
     "test": "jest --silent",
+    "test:coverage": "jest --silent --coverage",
     "lint": "eslint --ext .js,.jsx .",
     "lint:fix": "eslint --ext .js,.jsx --fix .",
     "prettier": "prettier --check './**/*.{js,jsx,ts,tsx,css,md,json}'",
