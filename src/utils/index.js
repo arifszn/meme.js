@@ -3,9 +3,9 @@ const axios = require('axios');
 /**
  * Get random number from min and max range. Min is inclusive, Max is exclusive.
  *
- * @param {Number} min
- * @param {Number} max
- * @return {Number} random number
+ * @param {number} min
+ * @param {number} max
+ * @return {number} random number
  */
 const randomNumber = (min, max) => {
   min = Math.ceil(min);
@@ -17,12 +17,12 @@ const randomNumber = (min, max) => {
 /**
  * Check if url is image url.
  *
- * @param {String} url
- * @param {boolean} includeGif | should include gif
- * @return {Boolean}
+ * @param {string} url
+ * @param {boolean} allowGIF
+ * @return {boolean}
  */
-const isImageUrl = (url, includeGif = true) => {
-  if (includeGif) {
+const isImageUrl = (url, allowGIF = true) => {
+  if (allowGIF) {
     return (
       !url.includes('.gifv') &&
       (url.includes('.jpg') ||
@@ -41,8 +41,8 @@ const isImageUrl = (url, includeGif = true) => {
 /**
  * Make a get request.
  *
- * @param {String} url
- * @return Axios response object
+ * @param {string} url
+ * @return {import('axios').AxiosRequestHeaders}
  */
 const getRequest = async (url) => {
   try {
@@ -55,14 +55,12 @@ const getRequest = async (url) => {
 /**
  * Format the raw post.
  *
- * @param {Object} post
- * @param {string} type
- * @return {Object} formatted posts
+ * @param {object} post
+ * @return {object} formatted posts
  */
-const formatPost = (post, type) => {
+const formatPost = (post) => {
   return {
     id: typeof post.id !== 'undefined' ? post.id : null,
-    type: type,
     title: typeof post.title !== 'undefined' ? post.title : null,
     postLink:
       typeof post.id !== 'undefined' ? 'https://redd.it/' + post.id : null,
@@ -79,7 +77,23 @@ const formatPost = (post, type) => {
   };
 };
 
+/**
+ * Shuffle an array
+ *
+ * @param {array} array
+ * @returns {array}
+ */
+const shuffleArray = (array) => {
+  for (let i = array.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+
+  return array;
+};
+
 module.exports.randomNumber = randomNumber;
 module.exports.isImageUrl = isImageUrl;
 module.exports.getRequest = getRequest;
 module.exports.formatPost = formatPost;
+module.exports.shuffleArray = shuffleArray;
