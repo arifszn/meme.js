@@ -1,2 +1,3 @@
 # meme.js
-Random memes on your browser/server.
+
+Random memes on the browser/server.
