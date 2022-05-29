@@ -59,23 +59,21 @@ const getRandomMeme = async ({
     });
   }
 
-  let memeArray = response.data.data.children;
-
-  memeArray.forEach((meme) => {
+  response.data.data.children.forEach((rawPost) => {
     if (
-      typeof meme.data !== 'undefined' &&
-      typeof meme.data.url !== 'undefined' &&
-      isImageUrl(meme.data.url, allowGIF) &&
-      (!allowNSFW ? !meme.data.over_18 : true) &&
-      !isDuplicate(fetchedMeme, meme)
+      typeof rawPost.data !== 'undefined' &&
+      typeof rawPost.data.url !== 'undefined' &&
+      isImageUrl(rawPost.data.url, allowGIF) &&
+      (!allowNSFW ? !rawPost.data.over_18 : true) &&
+      !isDuplicate(fetchedMeme, rawPost)
     ) {
-      memeArray.push(formatPost(meme.data));
+      fetchedMeme.push(formatPost(rawPost.data));
     }
   });
 
   // if total is not satisfied, retry with already fetched data
-  if (memeArray.length < total)
-    memeArray = await getRandomMeme({
+  if (fetchedMeme.length < total)
+    fetchedMeme = await getRandomMeme({
       total: total,
       retryCounter: retryCounter,
       fetchedMeme: fetchedMeme,
@@ -83,7 +81,7 @@ const getRandomMeme = async ({
       allowGIF: allowGIF,
     });
 
-  return shuffleArray(memeArray)[total];
+  return shuffleArray(fetchedMeme).slice(0, total);
 };
 
 const getRandomSearchType = () => {
