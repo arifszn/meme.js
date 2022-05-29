@@ -2,9 +2,9 @@
 // Project https://github.com/arifszn/meme.js
 // Author: Ariful Alam
 
-interface options {
+export interface options {
   /**
-   * How many images to get
+   * How many memes to get.
    *
    * Default: 1
    *
@@ -13,14 +13,14 @@ interface options {
   total?: number;
 
   /**
-   * Allow NSFW results
+   * Allow NSFW content in results.
    *
    * Default: true
    */
   allowNSFW?: boolean;
 
   /**
-   * Allow GIF results
+   * Allow GIF content in results.
    *
    * Default: true
    */
@@ -28,7 +28,7 @@ interface options {
 }
 
 /**
- * Get most recent dev posts
+ * Get meme.
  */
 declare function getMeme(options?: options): Promise<any>;
 
