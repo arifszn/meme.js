@@ -1,8 +1,9 @@
 {
   "name": "@arifszn/meme-js",
   "version": "1.0.0",
-  "description": "Random memes on the browser/server",
+  "description": "Get random memes on the browser/server",
   "main": "./src/index.js",
+  "typings": "./types/index.d.ts",
   "scripts": {
     "lint": "eslint --ext .js,.jsx .",
     "lint:fix": "eslint --ext .js,.jsx --fix .",
