@@ -8,7 +8,7 @@ interface options {
    *
    * Default: 1
    *
-   * Max: 50
+   * Max: 20
    */
   total?: number;
 
