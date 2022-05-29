@@ -9,10 +9,14 @@ const { getRandomMeme } = require('./meme');
  * @param {boolean} obj.allowGIF
  * @returns {array}
  */
-const getMeme = async ({ total = 1, allowNSFW = true, allowGIF = true }) => {
+const getMeme = async ({
+  total = 1,
+  allowNSFW = true,
+  allowGIF = true,
+} = {}) => {
   try {
-    if (total > 50) {
-      throw Error('max value of total is 50');
+    if (total > 20) {
+      throw Error('max value of total is 20');
     } else if (total < 1) {
       throw Error('min value of total is 1');
     }

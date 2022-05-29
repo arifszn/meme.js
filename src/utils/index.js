@@ -71,8 +71,8 @@ const formatPost = (post) => {
     spoiler: typeof post.spoiler !== 'undefined' ? post.spoiler : null,
     createdUtc:
       typeof post.created_utc !== 'undefined' ? post.created_utc : null,
-    upvotes: typeof post.ups !== 'undefined' ? post.ups : null,
-    upvoteRatio:
+    upVotes: typeof post.ups !== 'undefined' ? post.ups : null,
+    upVoteRatio:
       typeof post.upvote_ratio !== 'undefined' ? post.upvote_ratio : null,
   };
 };

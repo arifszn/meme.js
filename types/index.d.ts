@@ -8,7 +8,7 @@ interface options {
    *
    * Default: 1
    *
-   * Max: 50
+   * Max: 20
    */
   total?: number;
 
@@ -30,6 +30,6 @@ interface options {
 /**
  * Get most recent dev posts
  */
-declare function getMeme(options: options): Promise<any>;
+declare function getMeme(options?: options): Promise<any>;
 
 export { getMeme };
