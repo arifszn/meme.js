@@ -30,6 +30,6 @@ interface options {
 /**
  * Get most recent dev posts
  */
-declare function getMeme(options: options): Promise<any>;
+declare function getMeme(options?: options): Promise<any>;
 
 export { getMeme };
