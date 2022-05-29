@@ -1,0 +1,24 @@
+{
+  "name": "@arifszn/meme-js",
+  "version": "1.0.0",
+  "description": "Random memes on the browser/server",
+  "main": "./src/index.js",
+  "license": "MIT",
+  "author": "arifszn",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arifszn/meme.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arifszn/meme.js/issues"
+  },
+  "keywords": [
+    "meme",
+    "memes",
+    "reddit meme",
+    "random memes",
+    "reddit",
+    "reddit image",
+    "reddit image api"
+  ]
+}
