@@ -40,4 +40,7 @@ const subreddit = [
   'PerfectTiming',
 ];
 
+const searchType = ['hot', 'top', 'rising'];
+
 module.exports.subreddit = subreddit;
+module.exports.searchType = searchType;
