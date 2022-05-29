@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "Random memes on the browser/server",
   "main": "./src/index.js",
+  "scripts": {
+    "lint": "eslint --ext .js,.jsx .",
+    "lint:fix": "eslint --ext .js,.jsx --fix .",
+    "prettier": "prettier --check './**/*.{js,jsx,ts,tsx,css,md,json}'",
+    "prettier:fix": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}'"
+  },
   "license": "MIT",
   "author": "arifszn",
   "repository": {
