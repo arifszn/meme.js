@@ -2,7 +2,7 @@
     <img src="https://user-images.githubusercontent.com/45073703/170882295-c20a51b9-67b4-414f-9b9e-7178bfc5d8c5.png" alt="Meme.js" >
 </p>
 <p align="center">
-  <b>Get random memes on the browser/server.</b>
+  <b>Get memes on browser/server.</b>
 </p>
 <p align="center">
   <a href="https://github.com/arifszn/meme.js/actions/workflows/test.yml">
@@ -12,7 +12,7 @@
 
 ## Description
 
-**meme.js** is a JavaScript package to fetch bulk memes. Supports both browser and server.
+**meme.js** is a JavaScript package to get bulk memes. Supports both browser and server.
 
 ## Installation
 
@@ -62,11 +62,11 @@ getMeme({
 
 ## Options
 
-| Property  |  Type   | Description                      |      Default      |
-| :-------- | :-----: | :------------------------------- | :---------------: |
-| total     | number  | How many memes to get. Max is 20 |  <code>1</code>   |
-| allowNSFW | boolean | Allow NSFW content in results    | <code>true</code> |
-| allowGIF  | boolean | Allow GIF content in results     | <code>true</code> |
+|  Property   |  Type   | Description                      | Default |
+| :---------: | :-----: | :------------------------------- | :-----: |
+|   `total`   | number  | How many memes to get. Max is 20 |    1    |
+| `allowNSFW` | boolean | Allow NSFW content in results    |  true   |
+| `allowGIF`  | boolean | Allow GIF content in results     |  true   |
 
 ## Sample Response
 
@@ -82,8 +82,8 @@ getMeme({
     NSFW: false,
     spoiler: false,
     createdUtc: 1644549590,
-    upvotes: 464,
-    upvoteRatio: 1.0,
+    upVotes: 464,
+    upVoteRatio: 1.0,
   },
 ];
 ```
