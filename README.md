@@ -1,12 +1,21 @@
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/45073703/170882295-c20a51b9-67b4-414f-9b9e-7178bfc5d8c5.png" alt="Meme.js" >
+    <img src="https://user-images.githubusercontent.com/45073703/170882295-c20a51b9-67b4-414f-9b9e-7178bfc5d8c5.png" alt="meme.js" >
 </p>
 <p align="center">
   <b>Get memes on browser/server.</b>
 </p>
 <p align="center">
+  <a href="https://www.npmjs.com/package/@arifszn/meme-js">
+    <img src="https://img.shields.io/npm/v/@arifszn/meme-js"/>
+  </a>
+  <a href="https://github.com/arifszn/meme.js/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/arifszn/meme.js"/>
+  </a>
   <a href="https://github.com/arifszn/meme.js/actions/workflows/test.yml">
     <img src="https://github.com/arifszn/meme.js/actions/workflows/test.yml/badge.svg"/>
+  </a>
+  <a href="https://twitter.com/intent/tweet?text=JavaScript%20package%20to%20get%20memes%20on%20browser/server.&url=https://github.com/arifszn/meme-js&hashtags=javascript,opensource,js,webdev,developers">
+    <img src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Farifszn%2Fmeme-js"/>
   </a>
 </p>
 
@@ -14,19 +23,26 @@
 
 **meme.js** is a JavaScript package to get bulk memes. Supports both browser and server.
 
+You may be interested in also:
+
+- [wallpaper.js](https://github.com/arifszn/wallpaper.js)
+- [Reddit Image Fetcher](https://github.com/arifszn/reddit-image-fetcher)
+
 ## Installation
 
-Install via <a href="https://www.npmjs.com/package/@arifszn/meme-js">NPM</a>
+Install via <a href="https://www.npmjs.com/package/@arifszn/meme-js">NPM</a>.
 
 ```
 npm install @arifszn/meme-js
 ```
 
-Install via <a href="https://yarnpkg.com/package/@arifszn/meme-js">Yarn</a>
+Or install via <a href="https://yarnpkg.com/package/@arifszn/meme-js">Yarn</a>.
 
 ```
 yarn add @arifszn/meme-js
 ```
+
+You can also try it [online](https://stackblitz.com/edit/meme-js).
 
 ## Usage
 
