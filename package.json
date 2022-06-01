@@ -1,6 +1,6 @@
 {
   "name": "@arifszn/meme-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get memes on browser/server",
   "main": "./src/index.js",
   "typings": "./types/index.d.ts",
@@ -32,6 +32,9 @@
     "funny images",
     "meme generate",
     "meme generator",
+    "reddit meme",
+    "reddit memes",
+    "reddit funny",
     "reddit funny",
     "reddit client",
     "reddit",
